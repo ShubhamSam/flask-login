@@ -1,0 +1,18 @@
+{% from 'form-macro.html' import displayField %}
+{% extends 'layout.html' %}
+{% block title %}Registration{% endblock %}
+
+{% block content %}
+
+<form action="/" , method="POST">
+    {{ displayField(form.username, 'Username', autocomplete="off", autofocus=true) }}
+    {{ displayField(form.password, 'Password') }}
+    {{ displayField(form.confirm_pswd, 'Retype Password') }}
+
+    <div>
+        {{form.button}}
+    </div>
+    {{ form.csrf_token }}
+</form>
+
+{% endblock %}
