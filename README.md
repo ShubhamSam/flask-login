@@ -1,1 +1,1 @@
-Flask Simple Login with Flask Vlaidation using flask wtforms
+Flask Simple Login with Flask Validation using flask wtforms
